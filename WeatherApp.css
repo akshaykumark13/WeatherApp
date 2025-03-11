@@ -1,0 +1,78 @@
+.Full{
+    display: flex;
+    position: relative;
+}
+#Background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Sky1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+#card {
+    position: absolute;
+    left: 430px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: rgba(38, 68, 95, 0.8); /* Slight transparency for the card */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border: 0.4px solid rgba(168, 156, 156, 0.233);
+    color: white; /* Ensure text contrasts with the background */
+    padding: 20px;
+    /* text-align: center; */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.weather-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.weather-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.weather-button {
+    margin-left: 20px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(66, 135, 245); /* Blue button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.weather-button:hover {
+    background-color: rgb(56, 115, 215); /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.weather-button:active {
+    transform: scale(0.95);
+}
+

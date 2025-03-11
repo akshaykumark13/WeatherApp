@@ -1,0 +1,1 @@
+export const Apikey = '0aa9530400b8528944048872e0c56247';
